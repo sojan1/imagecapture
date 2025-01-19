@@ -1,3 +1,7 @@
 [
-   
+    {
+        "timestamp": "20250120_030351",
+        "event_type": "ImageCapture",
+        "image_filename": "20250120_030351_image.jpg"
+    }
 ]

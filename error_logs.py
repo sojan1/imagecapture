@@ -7,22 +7,21 @@ from config import Config
 
 def generate_log(messagelog : str) :
     try:
-        # Set up logging
         logger = logging.getLogger()
         logger.setLevel(logging.INFO)
 
+        #Condition to avoid duplicate logging
         if not logger.hasHandlers(): 
-            # Create a handler to append to the file
             handler = logging.FileHandler(Config.ERRORLOG_PATH)
 
-            # Create a JsonFormatter and set it to the handler
+            #Create a JsonFormatter for formatting
             formatter = jsonlogger.JsonFormatter()
             handler.setFormatter(formatter)
 
-            # Add the handler to the logger
+            #Add the handler to the logger
             logger.addHandler(handler)
 
-        # Log an event
+        #Log event
         logger.info(messagelog)
     except Exception as e:
         print(f"Error: {e}")

@@ -33,5 +33,10 @@
         "timestamp": "20250120_024114",
         "event_type": "ImageCapture",
         "image_filename": "20250120_024114_image.jpg"
+    },
+    {
+        "timestamp": "20250120_024455",
+        "event_type": "ImageCapture",
+        "image_filename": "20250120_024455_image.jpg"
     }
 ]

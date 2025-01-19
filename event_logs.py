@@ -6,7 +6,7 @@ from config import Config
 from json2html import *
 import json
 from error_logs import generate_log
-from general import get_formatted_date, read_json, write_json, log_error
+from general import get_formatted_date, read_json, write_json, log_message
 
 
 
@@ -23,7 +23,7 @@ def get_events():
 
     except Exception as e:
         error_message = f"Error retrieving events: {e}"
-        log_error(error_message)
+        log_message(error_message)
         return {"message": error_message}
     
 
@@ -44,4 +44,4 @@ def log_event(timestamp: str, event_type: str, image_filename: str):
 
     except Exception as e:
         error_message = f"Error logging event: {e}"
-        log_error(error_message)
+        log_message(error_message)

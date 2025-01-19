@@ -4,7 +4,7 @@ import cv2
 from config import Config 
 from datetime import datetime
 from error_logs import generate_log
-from general import get_timestamp, get_formatted_date
+from general import get_timestamp, log_message
 
 
 def initialize_camera():
@@ -44,9 +44,6 @@ def capture_image():
     finally:
         camera.release()
 
-def log_message(message: str):
-    print(message)
-    generate_log(f"{message}, {os.path.basename(__file__)}, {get_formatted_date()}")
 
     
         

@@ -12,7 +12,7 @@ def read_json(file_path):
                 return json.load(file)
         return []
     except Exception as e:
-        log_error(f"Failed to read file '{file_path}': {e}")
+        log_message(f"Failed to read file '{file_path}': {e}")
         raise
 
 def write_json(file_path, data):
@@ -20,7 +20,7 @@ def write_json(file_path, data):
         with open(file_path, 'w') as file:
             json.dump(data, file, indent=4)
     except Exception as e:
-        log_error(f"Failed to write file '{file_path}': {e}")
+        log_message(f"Failed to write file '{file_path}': {e}")
         raise
 
 def get_timestamp() :
@@ -29,8 +29,7 @@ def get_timestamp() :
         return timestamp
     
     except Exception as e:
-        generate_log(f"Error: {e}, ErrorFile: {os.path.basename(__file__)}")
-        print(f"Error: {e}, ErrorFile: {os.path.basename(__file__)}")
+        log_message(f"Error: {e}")
         
 
 def get_formatted_date() :
@@ -40,9 +39,8 @@ def get_formatted_date() :
         return timestamp
     
     except Exception as e:
-        generate_log(f"Error: {e}, ErrorFile: {os.path.basename(__file__)}")
-        print(f"Error: {e}, ErrorFile: {os.path.basename(__file__)}")
-        
-def log_error(message):
+        log_message(f"Error: {e}")
+
+def log_message(message):
     print(message)
     generate_log(f"{message}, {os.path.basename(__file__)}, {get_formatted_date()}")

@@ -1,0 +1,39 @@
+{"message": "Image captured and saved as './IMAGE_PATH/20250119_164136_image.jpg', capture_image.py, 2025-01-19 16:41:36"}
+{"message": "logs: {'timestamp': '20250119_164136', 'event_type': 'ImageCapture', 'image_filename': '20250119_164136_image.jpg'}, event_logs.py, 2025-01-19 16:41:39"}
+{"message": "Shutting down"}
+{"message": "Waiting for application shutdown."}
+{"message": "Application shutdown complete."}
+{"message": "Finished server process [20052]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"message": "Error: 'list' object has no attribute 'get', event_logs.py, 2025-01-19 18:13:45"}
+{"message": "Shutting down"}
+{"message": "Waiting for application shutdown."}
+{"message": "Application shutdown complete."}
+{"message": "Finished server process [15400]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"message": "Error: type object 'Config' has no attribute 'IMAGE_FOLDER', event_logs.py, 2025-01-19 18:20:04"}
+{"message": "Shutting down"}
+{"message": "Waiting for application shutdown."}
+{"message": "Application shutdown complete."}
+{"message": "Finished server process [19544]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"message": "Error: type object 'Config' has no attribute 'IMAGE_FOLDER', event_logs.py, 2025-01-19 18:38:39"}
+{"message": "Shutting down"}
+{"message": "Waiting for application shutdown."}
+{"message": "Application shutdown complete."}
+{"message": "Finished server process [29328]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"message": "Image captured and saved, './IMAGE_PATH/20250119_184920_image.jpg', capture_image.py, 2025-01-19 18:49:20"}
+{"message": "logs: {'timestamp': '20250119_184920', 'event_type': 'ImageCapture', 'image_filename': '20250119_184920_image.jpg'}, event_logs.py, 2025-01-19 18:49:23"}
+{"message": "Shutting down"}
+{"message": "Waiting for application shutdown."}
+{"message": "Application shutdown complete."}
+{"message": "Finished server process [7116]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"message": "Image captured and saved, './IMAGE_PATH/20250119_205225_image.jpg', capture_image.py, 2025-01-19 20:52:25"}
+{"message": "logs: {'timestamp': '20250119_205225', 'event_type': 'ImageCapture', 'image_filename': '20250119_205225_image.jpg'}, event_logs.py, 2025-01-19 20:52:28"}
+{"message": "Shutting down"}
+{"message": "Waiting for application shutdown."}
+{"message": "Application shutdown complete."}
+{"message": "Finished server process [18168]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"message": "Image captured and saved, './IMAGE_PATH/20250119_211237_image.jpg', capture_image.py, 2025-01-19 21:12:37"}
+{"message": "logs: {'timestamp': '20250119_211237', 'event_type': 'ImageCapture', 'image_filename': '20250119_211237_image.jpg'}, event_logs.py, 2025-01-19 21:12:41"}
+{"message": "Shutting down"}
+{"message": "Waiting for application shutdown."}
+{"message": "Application shutdown complete."}
+{"message": "Finished server process [4932]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}

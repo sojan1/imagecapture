@@ -1,0 +1,17 @@
+[
+    {
+        "timestamp": "20250119_205225",
+        "event_type": "ImageCapture",
+        "image_filename": "20250119_205225_image.jpg"
+    },
+    {
+        "timestamp": "20250119_211237",
+        "event_type": "ImageCapture",
+        "image_filename": "20250119_211237_image.jpg"
+    },
+    {
+        "timestamp": "20250119_235916",
+        "event_type": "ImageCapture",
+        "image_filename": "20250119_235916_image.jpg"
+    }
+]

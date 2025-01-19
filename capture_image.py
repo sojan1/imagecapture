@@ -28,25 +28,27 @@ def save_image(frame, timestamp):
     result = cv2.imwrite(file_path, frame)
     return file_name, file_path, result
 
-def capture_image():
+def capture_image(): 
     try:
         camera = initialize_camera()
         frame = capture_frame(camera)
         timestamp = get_timestamp()
         file_name, file_path, result = save_image(frame, timestamp)
         
-        message = f"Image captured and saved, '{file_path}'"
-        generate_log(f"{message}, {os.path.basename(__file__)}, {get_formatted_date()}")
+        log_message(f"Image captured and saved, '{file_path}'")
         return file_name, timestamp, result
     except RuntimeError as e:
-        print(f"Error: {e}, {os.path.basename(__file__)}, {get_formatted_date()}")
-        generate_log(f"Error: {e}, {os.path.basename(__file__)}, {get_formatted_date()}")
+        log_message(f"Error: {e}")
     except Exception as e:
-        print(f"Error: {e}, {os.path.basename(__file__)}, {get_formatted_date()}")
-        generate_log(f"Error: {e}, {os.path.basename(__file__)}, {get_formatted_date()}")
+        log_message(f"Error: {e}")
     finally:
         camera.release()
- 
+
+def log_message(message: str):
+    print(message)
+    generate_log(f"{message}, {os.path.basename(__file__)}, {get_formatted_date()}")
+
+    
 
 
 # def capture_image() :

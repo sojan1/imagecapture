@@ -2,8 +2,6 @@ import os
 from dotenv import load_dotenv
 import cv2
 from config import Config 
-from datetime import datetime
-from error_logs import generate_log
 from general import get_timestamp, log_message
 
 

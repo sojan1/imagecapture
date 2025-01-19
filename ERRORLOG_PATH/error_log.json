@@ -33,3 +33,9 @@
 {"message": "Waiting for application shutdown."}
 {"message": "Application shutdown complete."}
 {"message": "Finished server process [55680]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}
+{"message": "Image captured and saved, './IMAGE_PATH/20250120_025907_image.jpg', general.py, 2025-01-20 02:59:07"}
+{"message": "Event logged: {'timestamp': '20250120_025907', 'event_type': 'ImageCapture', 'image_filename': '20250120_025907_image.jpg'}, event_logs.py, 2025-01-20 02:59:11"}
+{"message": "Shutting down"}
+{"message": "Waiting for application shutdown."}
+{"message": "Application shutdown complete."}
+{"message": "Finished server process [40412]", "color_message": "Finished server process [\u001b[36m%d\u001b[0m]"}

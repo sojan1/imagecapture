@@ -49,43 +49,5 @@ def log_message(message: str):
     generate_log(f"{message}, {os.path.basename(__file__)}, {get_formatted_date()}")
 
     
-
-
-# def capture_image() :
-#     try:
-#         # Open the camera
-#         camera = cv2.VideoCapture(0)
-#         # Check if the camera opened successfully
-#         if not camera.isOpened():
-#             raise RuntimeError("Unable to access the camera")
-        
-#         # Capture a single frame    
-#         ret, frame = camera.read()
-
-#         # Save the image
-#         if not ret:
-#             raise RuntimeError("Failed to capture an image")
-
-#         timestamp = get_timestamp()
-#         file_name = f"{timestamp}{Config.IMAGE_NAME_SUFFIX}"
-#         file_path = f"{Config.IMAGE_PATH}{file_name}"
-
-#         result = cv2.imwrite(file_path, frame) 
-#         message=f"Image captured and saved, '{file_path}'"
-#         #print(message)
-#         generate_log(f"{message}, {os.path.basename(__file__)}, {get_formatted_date()}")
-#         return file_name,timestamp,result
-    
-#     except RuntimeError as e:
-#         print(f"Error: {e}, {os.path.basename(__file__)}, {get_formatted_date()}")
-#         generate_log(f"Error: {e}, {os.path.basename(__file__)}, {get_formatted_date()}")
-
-#     except Exception as e:
-#         print(f"Error: {e}, {os.path.basename(__file__)}, {get_formatted_date()}")
-#         generate_log(f"Error: {e}, {os.path.basename(__file__)}, {get_formatted_date()}")
-
-#     finally:
-#         #Release the camera
-#         camera.release()
         
 

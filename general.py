@@ -41,3 +41,12 @@ def get_formatted_date() :
 def log_message(message):
     print(message)
     generate_log(f"{message}, {os.path.basename(__file__)}, {get_formatted_date()}")
+
+
+def print_test_comment_started(message):
+    #print(f"\n----------------------------------------------------------------------")
+    print(message)
+
+def print_test_comment_completed(message):
+    print(message)
+    print(f"\n----------------------------------------------------------------------")

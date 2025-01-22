@@ -6,21 +6,21 @@ from general import get_timestamp, log_message
 
 
 def initialize_camera():
-    #Initialize the camera
+    #initialize camera
     camera = cv2.VideoCapture(0)
     if not camera.isOpened():
         raise RuntimeError("Unable to access the camera")
     return camera
 
 def capture_frame(camera):
-    #Capture a frame from the camera
+    #capture frame
     ret, frame = camera.read()
     if not ret:
         raise RuntimeError("Failed to capture an image")
     return frame
 
 def save_image(frame, timestamp):
-    #Save the captured frame as an image
+    #save image
     file_name = f"{timestamp}{Config.IMAGE_NAME_SUFFIX}"
     file_path = f"{Config.IMAGE_PATH}{file_name}"
     result = cv2.imwrite(file_path, frame)

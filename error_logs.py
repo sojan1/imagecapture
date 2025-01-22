@@ -10,15 +10,15 @@ def generate_log(messagelog : str) :
         logger = logging.getLogger()
         logger.setLevel(logging.INFO)
 
-        #Condition to avoid duplicate logging
+        #to avoid duplicate logging
         if not logger.hasHandlers(): 
             handler = logging.FileHandler(Config.ERRORLOG_PATH)
 
-            #Create a JsonFormatter for formatting
+            #format json
             formatter = jsonlogger.JsonFormatter()
             handler.setFormatter(formatter)
 
-            #Add the handler to the logger
+            #add the handler to the logger
             logger.addHandler(handler)
 
         #Log event

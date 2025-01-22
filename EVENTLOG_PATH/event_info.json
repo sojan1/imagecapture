@@ -1,32 +1,7 @@
 [
     {
-        "timestamp": "2025-01-01_12-00-00",
-        "event_type": "IMAGE_CAPTURED",
-        "image_filename": "2025-01-01_12-00-00_image.jpg"
-    },
-    {
-        "timestamp": "2025-01-01_12-00-00",
-        "event_type": "IMAGE_CAPTURED",
-        "image_filename": "2025-01-01_12-00-00_image.jpg"
-    },
-    {
-        "timestamp": "2025-01-01_12-00-00",
-        "event_type": "IMAGE_CAPTURED",
-        "image_filename": "2025-01-01_12-00-00_image.jpg"
-    },
-    {
-        "timestamp": "2025-01-01_12-00-00",
-        "event_type": "IMAGE_CAPTURED",
-        "image_filename": "2025-01-01_12-00-00_image.jpg"
-    },
-    {
-        "timestamp": "2025-01-01_12-00-00",
-        "event_type": "IMAGE_CAPTURED",
-        "image_filename": "2025-01-01_12-00-00_image.jpg"
-    },
-    {
-        "timestamp": "2025-01-01_12-00-00",
-        "event_type": "IMAGE_CAPTURED",
-        "image_filename": "2025-01-01_12-00-00_image.jpg"
+        "timestamp": "20250123_001324",
+        "event_type": "ImageCapture",
+        "image_filename": "20250123_001324_image.jpg"
     }
 ]
